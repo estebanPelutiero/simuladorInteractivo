@@ -29,7 +29,7 @@ while (isNaN(price) == false && isNaN(fee) == false) {
     let again = prompt("Desea calcular otro precio? Oprima ACEPTAR, sino Escriba ESC para salir.");
 
     if (again.toUpperCase() == "ESC") {
-        console.log("Proceso Terminado. Recargue la página si desea seguir calculando.");
+        console.log("Proceso Terminado.");
         break;      
     }
 
@@ -41,4 +41,9 @@ if (isNaN(price) == true || isNaN(fee) == true) {
     alert("Tanto el precio, como la cantidad de cuotas deben ser números enteros.");
 }
 
-alert("Bucle finalizado.");
+function endAlert() {
+    alert("Bucle finalizado.");
+    console.log("Si desea seguir calculando, recargue la página.");
+}
+
+endAlert();
