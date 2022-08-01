@@ -9,8 +9,8 @@ escribir la condicion de una manera mas simple. */
 // Despues hice una funcion para tirar los console.log() y la funcion que tira el alert() y el console.log() final.
 
 function userInput(msg) {
-    let dato = parseInt(prompt(msg)); 
-    return validarInt(dato)
+    let dato = +prompt(msg); 
+    return validarInt(dato);
 }
 
 function validarInt (num) {
@@ -27,7 +27,7 @@ function endAlert() {
 }
 
 function showConLog(result) {
-    console.log(result)
+    console.log(result);
 }
 
 // ---------------------------------------------- DECLARACION VARIABLES
